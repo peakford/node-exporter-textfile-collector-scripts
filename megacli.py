@@ -18,6 +18,7 @@ def state2int(state):
   #put remaining states here
   states = {
     "Online, Spun Up": 255,
+    "JBOD": 255,
     "Hotspare, Spun Up": 256
     }
 
