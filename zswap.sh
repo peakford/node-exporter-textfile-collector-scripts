@@ -54,15 +54,6 @@ if [[ -d "${ZSWAP_DEBUG}" ]]; then
     duplicate_entry=$(read_debug "duplicate_entry")
     same_filled_pages=$(read_debug "same_filled_pages")
 
-    page_size=$(getconf PAGESIZE)
-    uncompressed_bytes=$(( stored_pages * page_size ))
-
-    if [[ "${pool_total_size}" -gt 0 ]]; then
-        ratio=$(awk "BEGIN {printf \"%.2f\", ${uncompressed_bytes} / ${pool_total_size}}")
-    else
-        ratio="0"
-    fi
-
     cat << EOF
 # HELP node_zswap_pool_total_size_bytes Current compressed pool size in bytes.
 # TYPE node_zswap_pool_total_size_bytes gauge
@@ -70,12 +61,6 @@ node_zswap_pool_total_size_bytes ${pool_total_size}
 # HELP node_zswap_stored_pages Number of pages currently stored in zswap.
 # TYPE node_zswap_stored_pages gauge
 node_zswap_stored_pages ${stored_pages}
-# HELP node_zswap_stored_bytes_uncompressed Estimated original (uncompressed) size of stored pages in bytes.
-# TYPE node_zswap_stored_bytes_uncompressed gauge
-node_zswap_stored_bytes_uncompressed ${uncompressed_bytes}
-# HELP node_zswap_compression_ratio Ratio of uncompressed to compressed size (higher is better).
-# TYPE node_zswap_compression_ratio gauge
-node_zswap_compression_ratio ${ratio}
 # HELP node_zswap_same_filled_pages Number of same-filled pages stored (zero pages etc).
 # TYPE node_zswap_same_filled_pages gauge
 node_zswap_same_filled_pages ${same_filled_pages}
