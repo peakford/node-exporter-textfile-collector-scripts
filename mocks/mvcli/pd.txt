@@ -1,0 +1,50 @@
+
+Physical Disk Information
+----------------------------
+Adapter:             0
+PD ID:               0
+Type:                SATA PD
+Linked at:           HBA port 0
+Size:                234431064 K
+Write cache:         not supported
+SMART:               supported (on)
+NCQ:                 supported (on)
+48 bits LBA:         supported
+supported speed:     1.5 3 6 Gb/s
+Current speed:       6 Gb/s
+model:               MTFDDAV240TCB                           
+Serial:              18351E4D542A
+Firmware version:     D0DE013
+Locate LED status:   Not Support
+Running OS:          yes
+SSD Type:            SSD
+PPID:                SG0TC2RPMCS0088S24GMA00
+block ids:           0  
+associated VDs:      0  
+PD valid size:       0 K
+
+
+Adapter:             0
+PD ID:               1
+Type:                SATA PD
+Linked at:           HBA port 1
+Size:                234431064 K
+Write cache:         not supported
+SMART:               supported (on)
+NCQ:                 supported (on)
+48 bits LBA:         supported
+supported speed:     1.5 3 6 Gb/s
+Current speed:       6 Gb/s
+model:               MTFDDAV240TCB                           
+Serial:              18331E4AE79A
+Firmware version:     D0DE013
+Locate LED status:   Not Support
+Running OS:          yes
+SSD Type:            SSD
+PPID:                SG0TC2RPMCS0088H2APBA00
+block ids:           4  
+associated VDs:      0  
+PD valid size:       0 K
+
+
+Total # of PD:       2

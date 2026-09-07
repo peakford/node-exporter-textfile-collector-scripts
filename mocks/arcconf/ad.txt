@@ -1,0 +1,129 @@
+Controllers found: 1
+----------------------------------------------------------------------
+Controller information
+----------------------------------------------------------------------
+   Controller Status                        : Optimal
+   Controller Mode                          : Mixed
+   Channel description                      : SCSI
+   Controller Model                         : Adaptec SmartRAID 3101-4i
+   Controller Serial Number                 : 0A17F3033EA
+   Controller World Wide Name               : 50000D1E00D09800
+   Physical Slot                            : 5
+   Temperature                              : 50 C/ 122 F (Normal)
+   Host bus type                            : PCIe 3.0
+   Host bus speed                           : 7880 MBps
+   Host bus link width                      : 8 bit(s)/link(s)
+   PCI Address (Bus:Device:Function)        : 0:2:0:0
+   Number of Ports                          : 1
+   Internal Port Count                      : 1
+   External Port Count                      : 0
+   Defunct disk drive count                 : 0
+   NCQ status                               : Enabled
+   Queue Depth                              : Automatic
+   Monitor and Performance Delay            : 60 minutes
+   Elevator Sort                            : Enabled
+   Degraded Mode Performance Optimization   : Disabled
+   Latency                                  : Disabled
+   Statistics data collection mode          : Disabled
+   Post Prompt Timeout                      : 15 seconds
+   Boot Controller                          : False
+   Primary Boot Volume                      : None
+   Secondary Boot Volume                    : None
+   Driver Name                              : smartpqi
+   Driver Supports SSD I/O Bypass           : Yes
+   Manufacturing Part Number                : Not Applicable
+   Manufacturing Spare Part Number          : Not Applicable
+   Manufacturing Wellness Log               : Not Applicable
+   NVRAM Checksum Status                    : Passed
+   Sanitize Lock Setting                    : None
+   --------------------------------------------------------
+   Power Settings
+   --------------------------------------------------------
+   Power Consumption                        : 8540 milliWatts 
+   Current Power Mode                       : Maximum Performance
+   Pending Power Mode                       : Not Applicable
+   Survival Mode                            : Enabled
+   --------------------------------------------------------
+   I2C Settings
+   --------------------------------------------------------
+   I2C Address                              : 0xDE
+   I2C Clock Speed                          : 400 KHZ
+   I2C Clock Stretching                     : Enabled
+   --------------------------------------------------------
+   Cache Properties
+   --------------------------------------------------------
+   Cache Status                             : Not Configured
+   Cache Serial Number                      : Not Applicable
+   Cache memory                             : 784 MB
+   Read Cache Percentage                    : 100 percent
+   Write Cache Percentage                   : 0 percent
+   No-Battery Write Cache                   : Disabled
+   Wait for Cache Room                      : Disabled
+   Write Cache Bypass Threshold Size        : 0 KB
+   --------------------------------------------------------
+   Physical Drive Write Cache Policy Information
+   --------------------------------------------------------
+   Configured Drives                        : Default
+   Unconfigured Drives                      : Default
+   HBA Drives                               : Default
+   --------------------------------------------------------
+   maxCache Properties
+   --------------------------------------------------------
+   maxCache Version                         : Not Applicable
+   maxCache RAID5 WriteBack Enabled         : Disabled
+   --------------------------------------------------------
+   RAID Properties
+   --------------------------------------------------------
+   Logical devices/Failed/Degraded          : 1/0/0
+   Spare Activation Mode                    : Disabled
+   Background consistency check             : Idle
+   Consistency Check Delay                  : 3 seconds
+   Parallel Consistency Check Supported     : Enabled
+   Parallel Consistency Check Count         : 1
+   Inconsistency Repair Policy              : Disabled
+   Consistency Check Inconsistency Notify   : Disabled
+   Rebuild Priority                         : High
+   Expand Priority                          : Medium
+   --------------------------------------------------------
+   Controller Version Information
+   --------------------------------------------------------
+   Firmware                                 : 3.53[0]
+   Driver                                   : Linux 2.1.12-055
+   Hardware Revision                        : B
+   --------------------------------------------------------
+   Temperature Sensors Information
+   --------------------------------------------------------
+   Sensor ID                                : 0
+   Current Value                            : 37 deg C
+   Max Value Since Powered On               : 37 deg C
+   Location                                 : Inlet Ambient
+
+   Sensor ID                                : 1
+   Current Value                            : 50 deg C
+   Max Value Since Powered On               : 50 deg C
+   Location                                 : ASIC
+
+   Sensor ID                                : 2
+   Current Value                            : 38 deg C
+   Max Value Since Powered On               : 38 deg C
+   Location                                 : Top
+
+   Sensor ID                                : 3
+   Current Value                            : 41 deg C
+   Max Value Since Powered On               : 41 deg C
+   Location                                 : Bottom
+
+   --------------------------------------------------------
+   Connector information
+                   
+   --------------------------------------------------------
+   Connector #0                             
+      Connector Name                        : CN0
+      Functional Mode                       : Mixed
+      Connector Location                    : Internal
+      SAS Address                           : 50000D1E00D09800
+
+
+
+
+Command completed successfully.

@@ -1,0 +1,1123 @@
+Controllers found: 1
+----------------------------------------------------------------------
+Physical Device information
+----------------------------------------------------------------------
+   Channel #0:
+      Device #4
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,4(4:0)
+         Reported Location                  : Enclosure 1, Slot 0(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 29D0A002FWEF
+         World-wide name                    : 50000D1F022B0800
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 39 deg C
+         Maximum Temperature                : 54 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : D7FA2ADAC33CB9A8
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 212811919
+         Sectors Written                    : 16551008
+         Service Hours                      : 1
+
+      Device #5
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,5(5:0)
+         Reported Location                  : Enclosure 1, Slot 1(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A10CFWEF
+         World-wide name                    : 50000D1F022B0801
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 39 deg C
+         Maximum Temperature                : 49 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 52D66C0070E9B3E4
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 212762441
+         Sectors Written                    : 16718480
+         Service Hours                      : 1
+
+      Device #6
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,6(6:0)
+         Reported Location                  : Enclosure 1, Slot 2(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 19B0A007FWEF
+         World-wide name                    : 50000D1F022B0802
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 56 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 9A1F82FC656E645B
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 212266212
+         Sectors Written                    : 16713792
+         Service Hours                      : 1
+
+      Device #7
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,7(7:0)
+         Reported Location                  : Enclosure 1, Slot 3(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : Z8F0A01DFWEF
+         World-wide name                    : 50000D1F022B0803
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 48 deg C
+         Maximum Temperature                : 51 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 0D5E1755762D9D45
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213030794
+         Sectors Written                    : 16427154
+         Service Hours                      : 1
+
+      Device #8
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,8(8:0)
+         Reported Location                  : Enclosure 1, Slot 4(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 8920A0N5FWEF
+         World-wide name                    : 50000D1F022B0804
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 47 deg C
+         Maximum Temperature                : 52 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 3925ACB801B82F69
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213044330
+         Sectors Written                    : 16316404
+         Service Hours                      : 1
+
+      Device #9
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,9(9:0)
+         Reported Location                  : Enclosure 1, Slot 5(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0SEFWEF
+         World-wide name                    : 50000D1F022B0805
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 44 deg C
+         Maximum Temperature                : 50 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 1F4B86841F45AFC4
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213221344
+         Sectors Written                    : 16484412
+         Service Hours                      : 1
+
+      Device #10
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,10(10:0)
+         Reported Location                  : Enclosure 1, Slot 6(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 7070A016FWEF
+         World-wide name                    : 50000D1F022B0806
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 39 deg C
+         Maximum Temperature                : 45 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 66D6860BDCE6B854
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 212977954
+         Sectors Written                    : 16463506
+         Service Hours                      : 1
+
+      Device #11
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,11(11:0)
+         Reported Location                  : Enclosure 1, Slot 7(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0GXFWEF
+         World-wide name                    : 50000D1F022B0807
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 39 deg C
+         Maximum Temperature                : 45 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 740BF6755A1E2C1B
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213297844
+         Sectors Written                    : 16378944
+         Service Hours                      : 1
+
+      Device #12
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,12(12:0)
+         Reported Location                  : Enclosure 1, Slot 8(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0HSFWEF
+         World-wide name                    : 50000D1F022B0808
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 44 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 460C52DA6C743C03
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213457844
+         Sectors Written                    : 16382728
+         Service Hours                      : 1
+
+      Device #14
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,14(14:0)
+         Reported Location                  : Enclosure 1, Slot 10(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A06LFWEF
+         World-wide name                    : 50000D1F022B080A
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 45 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 8225E4324B522D87
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213276193
+         Sectors Written                    : 16297712
+         Service Hours                      : 1
+
+      Device #15
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,15(15:0)
+         Reported Location                  : Enclosure 1, Slot 11(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0TFFWEF
+         World-wide name                    : 50000D1F022B080B
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 44 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 0E25476A08073679
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213671788
+         Sectors Written                    : 16194360
+         Service Hours                      : 1
+
+      Device #16
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,16(16:0)
+         Reported Location                  : Enclosure 1, Slot 12(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0FXFWEF
+         World-wide name                    : 50000D1F022B080C
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 40 deg C
+         Maximum Temperature                : 48 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 9169ECFD0B393EFA
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213339908
+         Sectors Written                    : 16277440
+         Service Hours                      : 1
+
+      Device #17
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,17(17:0)
+         Reported Location                  : Enclosure 1, Slot 13(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0S5FWEF
+         World-wide name                    : 50000D1F022B080D
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 40 deg C
+         Maximum Temperature                : 48 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 0AA1E8D38E386CB2
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213409316
+         Sectors Written                    : 16299176
+         Service Hours                      : 1
+
+      Device #18
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,18(18:0)
+         Reported Location                  : Enclosure 1, Slot 14(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70K0A0GTFWEF
+         World-wide name                    : 50000D1F022B080E
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 46 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : 88C8832BF29E6C79
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213716380
+         Sectors Written                    : 16240680
+         Service Hours                      : 1
+
+      Device #19
+         Device is a Hard drive
+         State                              : Online
+         Drive has stale RIS data           : False
+         Block Size                         : 512 Bytes
+         Physical Block Size                : 4K Bytes
+         Transfer Speed                     : SATA 12.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,19(19:0)
+         Reported Location                  : Enclosure 1, Slot 15(Connector 0:CN0)
+         Array                              : 0
+         Vendor                             : ATA     
+         Model                              : TOSHIBA MG06ACA1
+         Firmware                           : 0104    
+         Serial number                      : 70L0A01QFWEF
+         World-wide name                    : 50000D1F022B080F
+         Reserved Size                      : 32768 KB
+         Used Size                          : 9537504 MB
+         Unused Size                        : 0 MB
+         Total Size                         : 9537536 MB
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         SSD                                : No
+         NCQ supported                      : Supported
+         NCQ status                         : Enabled
+         Boot Type                          : None
+         Rotational Speed                   : 7200 RPM
+         Current Temperature                : 38 deg C
+         Maximum Temperature                : 49 deg C
+         Threshold Temperature              : 55 deg C
+         PHY Count                          : 1
+         Drive Configuration Type           : Data
+         Drive Encryption Capability        : None
+         Drive Encryption Status            : Not Applicable
+         Drive Exposed to OS                : False
+         Sanitize Erase Support             : True
+         Sanitize Lock Freeze Support       : True
+         Sanitize Lock Anti-Freeze Support  : True
+         Sanitize Lock Setting              : None
+         Drive Unique ID                    : AAC7931474133E06
+         Last Failure Reason                : No Failure
+      ----------------------------------------------------------------
+      Device Phy Information                
+      ----------------------------------------------------------------
+         Phy #0
+            Negotiated Physical Link Rate   : 12 Gbps 
+            Negotiated Logical Link Rate    : 12 Gbps 
+            Maximum Link Rate               : 6 Gbps 
+
+      ----------------------------------------------------------------
+      Device Error Counters                 
+      ----------------------------------------------------------------
+         Aborted Commands                   : 0
+         Bad Target Errors                  : 0
+         Ecc Recovered Read Errors          : 0
+         Failed Read Recovers               : 0
+         Failed Write Recovers              : 0
+         Format Errors                      : 0
+         Hardware Errors                    : 0
+         Hard Read Errors                   : 0
+         Hard Write Errors                  : 0
+         Hot Plug Count                     : 0
+         Media Failures                     : 0
+         Not Ready Errors                   : 0
+         Other Time Out Errors              : 0
+         Predictive Failures                : 0
+         Retry Recovered Read Errors        : 0
+         Retry Recovered Write Errors       : 0
+         Scsi Bus Faults                    : 0
+         Sectors Reads                      : 213568693
+         Sectors Written                    : 16360038
+         Service Hours                      : 1
+
+   Channel #2:
+      Device #0
+         Device is an Enclosure Services Device
+         Reported Channel,Device(T:L)       : 2,0(0:0)
+         Reported Location                  : Connector 0:CN0, Enclosure 1
+         Enclosure ID                       : 1
+         Enclosure Logical Identifier       : 50000D1F022B083E
+         Expander ID                        : 0
+         Expander SAS Address               : 50000D1F022B083F
+         SEP device ID                      : 377
+         Type                               : SES2
+         Vendor                             : ADAPTEC
+         Model                              : AEC-82885T
+         Firmware                           : B059
+         Status of Enclosure Services Device
+            Fan 1 status                    : 0 rpm (Not Supported)
+            Fan 2 status                    : 0 rpm (Not Supported)
+            Fan 3 status                    : 0 rpm (Not Supported)
+            Fan 4 status                    : 0 rpm (Not Supported)
+            Power supply 1 status           : Optimal
+            Power supply 2 status           : Optimal
+            Temperature Sensor Status 1     : Unknown
+            Temperature Sensor Status 2     : Unknown
+            Speaker status                  : Off
+   Channel #2:
+      Device #3
+         Device is an Enclosure Services Device
+         Reported Channel,Device(T:L)       : 2,3(3:0)
+         Enclosure Logical Identifier       : 50000D1E00D09804
+         Type                               : SES2
+         Vendor                             : Adaptec 
+         Model                              : Virtual SGPIO
+         Firmware                           : 3.53
+         Status of Enclosure Services Device
+            Speaker status                  : Not Available
+
+
+Command completed successfully.

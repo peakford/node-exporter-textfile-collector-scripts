@@ -1,0 +1,21 @@
+SMART STATUS RETURN: OK.
+
+Smart Info
+ID	Attribute Name			Current	Worst	Threshhold	RawValue
+01	Read Error Rate               	100	100	50      	000000000000
+05	Reallocated Sectors           	100	100	10      	000000000000
+09	Power-On Hours Count          	100	100	0       	000000009EA8
+0C	Power Cycle Count             	100	100	1       	000000000031
+0D	Soft read error rate          	100	100	0       	000000000000
+B3	Used Reserved Blocks(Total)   	100	100	0       	000000000000
+B4	Unused Reserved Block         	0	0	0       	00000000122C
+B5	Program Fail Count (Total)    	100	100	1       	000000000000
+B6	Erase Fail Count (Total)      	100	100	1       	000000000000
+C2	SSD Temperature               	48	19	0       	0051000F0034
+C3	ECC Error Rate                	100	100	50      	000000000000
+C6	Uncorrectable Sector Count    	100	100	0       	000000000000
+C7	CRC Error Count               	100	100	0       	000000000000
+C9	Soft read error rate          	100	100	1       	000000000000
+CA	Address Mark errors           	6	6	5       	0000000011BD
+E9	NAND GB written               	100	100	0       	01ECF5E4D5F5
+F5	Life Remaining                	6	6	1       	000000000006

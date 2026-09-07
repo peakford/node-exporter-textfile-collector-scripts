@@ -1,0 +1,48 @@
+Controllers found: 1
+----------------------------------------------------------------------
+Logical device information
+----------------------------------------------------------------------
+Logical Device number 0
+   Logical Device name                      : LogicalDrv 0
+   Disk Name                                : /dev/sda
+   Block Size of member drives              : 512 Bytes
+   Array                                    : 0
+   RAID level                               : 6
+   Status of Logical Device                 : Optimal(Background Parity Initialization : 0 %)
+   Parity Initialization Status             : In Progress
+   Size                                     : 123987552 MB
+   Stripe-unit size                         : 256 KB
+   Full Stripe Size                         : 3328 KB
+   Interface Type                           : Serial ATA
+   Device Type                              : Data
+   Boot Type                                : None
+   Heads                                    : 255
+   Sectors Per Track                        : 32
+   Cylinders                                : 65535
+   Caching                                  : Disabled
+   Mount Points                             : /srv/repos 123961949 MB  Partition Number 4 /boot 1024 MB  Partition Number 2 / 20480 MB  Partition Number 3 
+   LD Acceleration Method                   : None
+   Volume Unique Identifier                 : 600508B1001C262D9F8EDC12D15C8EE5
+   --------------------------------------------------------
+   Array Physical Device Information
+   --------------------------------------------------------
+   Device 4                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:0)         29D0A002FWEF
+   Device 5                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:1)         70K0A10CFWEF
+   Device 6                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:2)         19B0A007FWEF
+   Device 7                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:3)         Z8F0A01DFWEF
+   Device 8                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:4)         8920A0N5FWEF
+   Device 9                                 : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:5)         70K0A0SEFWEF
+   Device 10                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:6)         7070A016FWEF
+   Device 11                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:7)         70K0A0GXFWEF
+   Device 12                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:8)         70K0A0HSFWEF
+   Device 14                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:10)         70K0A06LFWEF
+   Device 15                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:11)         70K0A0TFFWEF
+   Device 16                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:12)         70K0A0FXFWEF
+   Device 17                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:13)         70K0A0S5FWEF
+   Device 18                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:14)         70K0A0GTFWEF
+   Device 19                                : Present (9537536MB, SATA, HDD, Connector:CN0, Enclosure:1, Slot:15)         70L0A01QFWEF
+
+
+
+
+Command completed successfully.
