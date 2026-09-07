@@ -14,6 +14,21 @@ def yesno(state):
     }
   return states.get(state, 1)
 
+def megacli(*args):
+  """Run megacli, returning [] instead of raising if the controller lacks the
+  feature (e.g. no BBU fitted). Keeps one missing section from killing the
+  whole collector."""
+  try:
+    res = subprocess.run(['/usr/local/sbin/megacli'] + list(args),
+                         stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
+                         check=True, universal_newlines=True)
+    return res.stdout.splitlines()
+  except (subprocess.CalledProcessError, OSError):
+    return []
+
+def isok(state, expected):
+  return 1 if state == expected else 0
+
 def state2int(state):
   #put remaining states here
   states = {
@@ -40,6 +55,9 @@ def tobytes(inp):
 def main():
   info = subprocess.check_output(['/usr/local/sbin/megacli', '-AdpAllInfo', '-aAll', '-nolog']).decode('utf-8').splitlines()
   pdlist = subprocess.check_output(['/usr/local/sbin/megacli', '-PdList', '-aAll', '-nolog']).decode('utf-8').splitlines()
+  encinfo = megacli('-EncInfo', '-aALL', '-nolog')
+  prinfo = megacli('-AdpPR', '-Info', '-aALL', '-nolog')
+  bbuinfo = megacli('-AdpBbuCmd', '-aALL', '-nolog')
   out = {}
 
   metrics= [
@@ -51,7 +69,14 @@ def main():
     'out["megacli_pd_info"]={ "help": "Physical drive detailed info", "type": "gauge" , "metrics": []}',
     'out["megacli_pd_temperature"]={ "help": "Physical drive temperature", "type": "gauge" , "metrics": []}',
     'out["megacli_pd_errors"]={ "help": "Physical drive error counters", "type": "gauge" , "metrics": []}',
-    'out["megacli_pd_speed_bits"]={ "help": "Link and drive speed", "type": "gauge" , "metrics": []}'
+    'out["megacli_pd_speed_bits"]={ "help": "Link and drive speed", "type": "gauge" , "metrics": []}',
+    'out["megacli_enclosure_status_ok"]={ "help": "Enclosure status is Normal", "type": "gauge" , "metrics": []}',
+    'out["megacli_patrol_read_auto"]={ "help": "Patrol read mode is Auto", "type": "gauge" , "metrics": []}',
+    'out["megacli_bbu_state_ok"]={ "help": "Battery backup unit state is Optimal", "type": "gauge" , "metrics": []}',
+    'out["megacli_bbu_soh_good"]={ "help": "Battery backup unit state of health is good", "type": "gauge" , "metrics": []}',
+    'out["megacli_bbu_temperature_celsius"]={ "help": "Battery backup unit temperature", "type": "gauge" , "metrics": []}',
+    'out["megacli_bbu_charge_percent"]={ "help": "Battery backup unit relative state of charge", "type": "gauge" , "metrics": []}',
+    'out["megacli_bbu_capacity_mah"]={ "help": "Battery backup unit capacity", "type": "gauge" , "metrics": []}'
   ]
 
   pat_info = [
@@ -285,6 +310,79 @@ def main():
     },
   ]
   
+  pat_enc = [
+    {
+      'regex': re.compile(r'^\s*Number\s+of\s+enclosures\s+on\s+adapter'),
+      'action': ['global adapter; adapter=line.split("adapter")[1].split("--")[0].strip()']
+    },
+    {
+      'regex': re.compile(r'^\s*Device\s+ID\s*:'),
+      'action': ['global enc_id; enc_id=line.split(":")[1].strip()']
+    },
+    {
+      'regex': re.compile(r'^\s+Status\s*:'),
+      'action': [
+        'out["megacli_enclosure_status_ok"]["metrics"].append({ "labels": { "adapter": adapter, "enclosure": enc_id, "status": line.split(":")[1].strip() }, "val": isok(line.split(":")[1].strip(), "Normal") })'
+      ]
+    },
+  ]
+
+  pat_pr = [
+    {
+      'regex': re.compile(r'^Adapter\s+\d+:\s+Patrol\s+Read\s+Information'),
+      'action': ['global adapter; adapter=line.split(":")[0].split()[1].strip()']
+    },
+    {
+      'regex': re.compile(r'^Patrol\s+Read\s+Mode\s*:'),
+      'action': [
+        'out["megacli_patrol_read_auto"]["metrics"].append({ "labels": { "adapter": adapter, "mode": line.split(":")[1].strip() }, "val": isok(line.split(":")[1].strip(), "Auto") })'
+      ]
+    },
+  ]
+
+  pat_bbu = [
+    {
+      'regex': re.compile(r'^BBU\s+status\s+for\s+Adapter\s*:'),
+      'action': ['global adapter; adapter=line.split(":")[1].strip()']
+    },
+    {
+      'regex': re.compile(r'^Battery\s+State\s*:'),
+      'action': [
+        'out["megacli_bbu_state_ok"]["metrics"].append({ "labels": { "adapter": adapter, "state": line.split(":")[1].strip() }, "val": isok(line.split(":")[1].strip(), "Optimal") })'
+      ]
+    },
+    {
+      'regex': re.compile(r'^isSOHGood\s*:'),
+      'action': [
+        'out["megacli_bbu_soh_good"]["metrics"].append({ "labels": { "adapter": adapter }, "val": yesno(line.split(":")[1].strip()) })'
+      ]
+    },
+    {
+      'regex': re.compile(r'^Temperature\s*:\s*\d+\s*C'),
+      'action': [
+        'out["megacli_bbu_temperature_celsius"]["metrics"].append({ "labels": { "adapter": adapter }, "val": line.split(":")[1].split("C")[0].strip() })'
+      ]
+    },
+    {
+      'regex': re.compile(r'^Relative\s+State\s+of\s+Charge\s*:'),
+      'action': [
+        'out["megacli_bbu_charge_percent"]["metrics"].append({ "labels": { "adapter": adapter }, "val": line.split(":")[1].split("%")[0].strip() })'
+      ]
+    },
+    {
+      'regex': re.compile(r'^Remaining\s+Capacity\s*:'),
+      'action': [
+        'out["megacli_bbu_capacity_mah"]["metrics"].append({ "labels": { "adapter": adapter, "type": "remaining" }, "val": line.split(":")[1].split("mAh")[0].strip() })'
+      ]
+    },
+    {
+      'regex': re.compile(r'^Full\s+Charge\s+Capacity\s*:'),
+      'action': [
+        'out["megacli_bbu_capacity_mah"]["metrics"].append({ "labels": { "adapter": adapter, "type": "full_charge" }, "val": line.split(":")[1].split("mAh")[0].strip() })'
+      ]
+    },
+  ]
+
   for m in metrics:
     exec(m)
 
@@ -301,6 +399,14 @@ def main():
         for a in p['action']:
           exec(a)
         continue
+
+  for src, pats in ((encinfo, pat_enc), (prinfo, pat_pr), (bbuinfo, pat_bbu)):
+    for line in src:
+      for p in pats:
+        if p['regex'].match(line):
+          for a in p['action']:
+            exec(a)
+          continue
 
 #  print json.dumps(out, indent=2, sort_keys=True)
   for k,v in out.items():
