@@ -11,6 +11,7 @@ import urllib.parse
 import socket
 import logging
 import logging.handlers
+import xml.etree.ElementTree as ET
 
 
 BINARIES = {
@@ -43,7 +44,7 @@ BINARIES = {
                     # ['Other Error Count', '0'],
                     ['Predictive Failure Count', '0'],
                     ['Firmware state', 'Online, Spun Up'],
-                    ['Drive has flagged a S\.M\.A\.R\.T alert', 'No'],
+                    [r'Drive has flagged a S\.M\.A\.R\.T alert', 'No'],
                 ]
             },
             {
@@ -92,7 +93,7 @@ BINARIES = {
                 'args': ['GETCONFIG', '1', 'PD'],
                 'test': 'arcconf/pd.txt',
                 'separator': {
-                    'regex': '\s+Device #(\d+)',
+                    'regex': r'\s+Device #(\d+)',
                     'label': 'device'
                 },
                 'values': [
@@ -117,8 +118,27 @@ BINARIES = {
                     ['Scsi Bus Faults', 'drive_has_scsi_bus_faults', '0']
                 ]
             }
-        ]
+        ],
+        'smart': {
+            'name': 'SMART statistics',
+            'args': ['GETSMARTSTATS', '1'],
+            'test': 'arcconf/smartstats.xml',
+        }
     }
+}
+
+# SMART id -> metric suffix. Keyed by id because attribute names differ by vendor.
+SMART_ATTRIBUTES = {
+    '0x05': 'reallocated_sectors',
+    '0x09': 'power_on_hours',
+    '0x0A': 'spin_retries',
+    '0x0C': 'power_cycles',
+    '0xBB': 'reported_uncorrectable_errors',
+    '0xC2': 'temperature_celsius',
+    '0xC4': 'reallocation_events',
+    '0xC5': 'pending_sectors',
+    '0xC6': 'uncorrectable_sectors',
+    '0xC7': 'udma_crc_errors',
 }
 
 # Parse cli args
@@ -144,15 +164,7 @@ if args.debug:
     logger.setLevel(logging.DEBUG)
 
 
-def collect_metrics():
-    """
-    Read output from vendor binary and compare significant lines
-    to expected result.
-
-    Return True if any result is unexpected.
-    """
-    metrics = []
-
+def get_binary_config():
     binary_name = args.vendor_binary or config.get('vendor', 'binary', fallback=False)
     binary_config = BINARIES.get(binary_name)  # TODO: read path from config, rename config stuff
     if binary_config is None:
@@ -163,21 +175,38 @@ def collect_metrics():
         logger.error('Supporting vendor binary not found.')
         sys.exit(1)
 
+    return binary_config
+
+
+def run_check(binary_config, check):
+    """Return vendor binary output for a check, or the mock file in debug mode."""
+    logger.debug('Running check: %s', check['name'])
+    if args.debug:
+        return open(os.path.join('mocks', check['test'])).read()
+
+    proc_res = subprocess.run(
+        [binary_config['path']] + check['args'],
+        stdout=subprocess.PIPE, check=True, universal_newlines=True)
+    cmd_res = proc_res.stdout
+    if len(cmd_res) == 0 or proc_res.returncode != 0:
+        logger.error('Vendor binary returned empty result or error.')
+        sys.exit(1)
+    return cmd_res
+
+
+def collect_metrics(binary_config):
+    """
+    Read output from vendor binary and compare significant lines
+    to expected result.
+
+    Return True if any result is unexpected.
+    """
+    metrics = []
+
     for check in binary_config['checks']:
-        logger.debug('Running check: %s', check['name'])
         separator_value = None
         separator_label = None
-        
-        if args.debug:
-            cmd_res = open(os.path.join('mocks', check['test'])).read()
-        else:
-            proc_res = subprocess.run(
-                [binary_config['path']] + check['args'],
-                stdout=subprocess.PIPE, check=True, universal_newlines=True)
-            cmd_res = proc_res.stdout
-            if len(cmd_res) == 0 or proc_res.returncode != 0:
-                logger.error('Vendor binary returned empty result or error.')
-                sys.exit(1)
+        cmd_res = run_check(binary_config, check)
 
         for line in cmd_res.splitlines():
             # try to update separator
@@ -190,7 +219,7 @@ def collect_metrics():
 
 
             for attribute_name, metric_name, expected_value in check['values']:
-                res = re.match(f"^\s*{attribute_name}\s*:\s*(\w+.*)$", line)
+                res = re.match(rf"^\s*{attribute_name}\s*:\s*(\w+.*)$", line)
                 if res is not None:
                     metrics.append([
                         metric_name,
@@ -201,7 +230,47 @@ def collect_metrics():
                     ])
 
 
-    logger.info('Finished checks for vendor %s', binary_name)
+    logger.info('Finished checks for vendor %s', args.vendor_binary)
+    return metrics
+
+
+def collect_smart_metrics(binary_config):
+    """
+    Parse GETSMARTSTATS output into (metric, labels, value) tuples.
+
+    The output is not one XML document: text banners surround two sibling
+    roots (SmartStats for SATA, SASSmartStats for SAS), so each fragment
+    is extracted and parsed on its own.
+    """
+    metrics = []
+    check = binary_config.get('smart')
+    if check is None:
+        return metrics
+
+    cmd_res = run_check(binary_config, check)
+    for match in re.finditer(r'<(SmartStats|SASSmartStats)\b.*?</\1>', cmd_res, re.S):
+        root = ET.fromstring(match.group(0))
+        if root.tag != 'SmartStats':
+            logger.debug('Skipping unsupported SMART section: %s', root.tag)
+            continue
+
+        for drive in root.iter('PhysicalDriveSmartStats'):
+            labels = {'device': drive.get('id')}
+            for attr in drive.iter('Attribute'):
+                attr_id = attr.get('id')
+                suffix = SMART_ATTRIBUTES.get(attr_id)
+                if suffix is not None:
+                    # rawValue may pack several fields on some firmware; exported as-is.
+                    try:
+                        metrics.append((f'smart_{suffix}', labels, int(attr.get('rawValue'))))
+                    except (TypeError, ValueError):
+                        logger.debug('Non-numeric rawValue for %s on device %s', attr_id, labels['device'])
+                metrics.append((
+                    'smart_attribute_failed',
+                    {**labels, 'id': attr_id, 'name': attr.get('name')},
+                    int(attr.get('Status') != 'OK')
+                ))
+
     return metrics
 
 
@@ -212,9 +281,17 @@ def print_all_metrics(metrics):
         else:
             print(f'{args.vendor_binary}_{metric}{{state="{metric_value}"}} {status}')
 
+
+def format_metric(name, labels, value):
+    label_str = ','.join(f'{k}="{v}"' for k, v in labels.items())
+    return f'{args.vendor_binary}_{name}{{{label_str}}} {value}'
+
+
 def main():
-    metrics = collect_metrics()
-    print_all_metrics(metrics)
+    binary_config = get_binary_config()
+    print_all_metrics(collect_metrics(binary_config))
+    for name, labels, value in collect_smart_metrics(binary_config):
+        print(format_metric(name, labels, value))
 
 
 if __name__ == '__main__':
